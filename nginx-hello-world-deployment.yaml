@@ -1,7 +1,5 @@
-# To deploy: kubectl create -f nginx-hello-world-deployment.yaml
-# Access it with the API as a proxy:
-# $ kubectl proxy
-# Then in you browser: http://localhost:8001/api/v1/namespaces/default/services/nginx:/proxy/#!/
+# To deploy: kubectl apply -f nginx-hello-world-deployment.yaml
+# Then in you browser: http://<LoadBalancerIP>:8080/
 
 apiVersion: v1
 kind: Service
